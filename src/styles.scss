@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+  font-family: Roboto;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  position: absolute;
+
+  a {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+  }
+  i {
+    font-size: 0.8rem;
+  }
+}
+

@@ -1,0 +1,25 @@
+<div class="main">
+
+  <div class="welcome">
+    <div>
+      Thank you for attending our wedding.
+    </div>
+    <div>
+      We'd love to share our pictures with you.
+    </div>
+    <div>
+      Please enter your code below:
+    </div>
+  </div>
+
+  <div class="form">
+    <form (ngSubmit)="submit()">
+      <mat-form-field>
+        <input matInput placeholder="Code" [(ngModel)]="code" name="code" [formControl]="formControl">
+        <mat-error *ngIf="formControl.hasError('invalid')">Invalid Code</mat-error>
+      </mat-form-field>
+
+      <button mat-button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

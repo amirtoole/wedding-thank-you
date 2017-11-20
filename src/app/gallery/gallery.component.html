@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="main" *ngFor="let section of sections; let page = index">
+    <h1>Page {{(page+1)}}</h1>
+    <div class="item" *ngFor="let image of section; let i = index">
+      <img src="{{image.url}}" href="#" (click)="openGallery(image.count)">
+    </div>
+  </div>
+
+  <ngx-image-gallery
+  [images]="images"
+  [conf]="conf">
+  </ngx-image-gallery>
+</div>

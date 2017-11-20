@@ -1,0 +1,41 @@
+:host {
+
+  .main {
+    height: 93vh;
+  }
+  .main:before {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.35;
+    background: url('/assets/bg3.jpg') center center no-repeat;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+    //color: #fff;
+    opacity: 1;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  .form {
+    width: 300px;
+    margin: 50px auto;
+    font-size: 1.5rem;
+  }
+}
